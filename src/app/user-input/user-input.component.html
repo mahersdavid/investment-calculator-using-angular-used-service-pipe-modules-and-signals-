@@ -1,0 +1,25 @@
+<div>
+  <form (ngSubmit)="passIni()">
+    <div class="input-group">
+      <p>
+        <label>INITIAL INVESTMENT</label>
+        <input type="text" name="intialInvestment" [(ngModel)]="enteredIntitalInv"/>
+      </p>
+      <p>
+        <label>ANNUAL INVESTMENT</label>
+        <input type="text" name="anualInvestment" [(ngModel)]="enteredAnualInv"/>
+      </p>
+    </div>
+    <div class="input-group">
+      <p>
+        <label>EXPECTED RETURNS</label>
+        <input type="number" name="expectedReturn" [(ngModel)]="enteredExpectedRtn"/>
+      </p>
+      <p>
+        <label>DURATION</label>
+        <input type="text" name="duration" [(ngModel)]="enteredDuration"/>
+      </p>
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+</div>
